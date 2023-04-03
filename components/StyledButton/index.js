@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Pressable } from 'react-native';
-import styles from './styles';
+
+import stylesButton from './stylesButton';
 
 export const StyleButton = (props) => {
 
@@ -19,10 +20,10 @@ export const StyleButton = (props) => {
     <View style={styles.container}>
         <Pressable 
         // to pass more than one prop of style
-            style={[styles.button, {backgroundColor: backgroundColor}]}
+            style={[stylesButton.button, {backgroundColor: backgroundColor}]}
             onPress={() => onPress()}>
         
-            <Text style={[styles.text, {color: textColor}]}>
+            <Text style={[stylesButton.text, {color: textColor}]}>
                 {content}
             </Text>
         
